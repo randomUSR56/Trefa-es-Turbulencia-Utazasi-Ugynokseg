@@ -34,7 +34,8 @@ namespace TTUtazasiUgynokseg
                 System.Console.WriteLine("6. Delete Passenger");
                 System.Console.WriteLine("7. Modify Payment Advance");
                 System.Console.WriteLine("8. Modify Passenger Details");
-                System.Console.WriteLine("9. Exit\n");
+                System.Console.WriteLine("9. Sign up");
+                System.Console.WriteLine("10, Exit\n");
 
                 string userInput = System.Console.ReadLine();
 
