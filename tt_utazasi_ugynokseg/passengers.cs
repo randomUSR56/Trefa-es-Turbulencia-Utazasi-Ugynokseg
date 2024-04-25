@@ -24,9 +24,9 @@ namespace TTUtazasiUgynokseg
             return $"{PassengerName} is going to {places}";
         }
 
-        public void MakePayment(decimal amount)
+        public void MakePayment(decimal amount, Trips trip)
         {
-            Payments.Add(new Payment(amount));
+            Payments.Add(new Payment(amount, trip));
         }
 
         public void SignUp(Trips trip)

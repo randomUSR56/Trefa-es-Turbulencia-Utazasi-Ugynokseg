@@ -15,6 +15,8 @@ namespace TTUtazasiUgynokseg
 
             System.Console.WriteLine(John);
 
+            John.MakePayment(20000, Barcelona);
+
             bool exit = false;
             while (!exit)
             {
@@ -22,7 +24,8 @@ namespace TTUtazasiUgynokseg
                 System.Console.WriteLine("Please select an option:");
                 System.Console.WriteLine("1. View Trip Details");
                 System.Console.WriteLine("2. View Passenger Details");
-                System.Console.WriteLine("3. Exit\n");
+                System.Console.WriteLine("3. Create Payment Advance");
+                System.Console.WriteLine("4. Exit\n");
 
                 string userInput = System.Console.ReadLine();
 
@@ -39,6 +42,12 @@ namespace TTUtazasiUgynokseg
                         System.Console.WriteLine("-------------------------\n");
                         break;
                     case "3":
+                        System.Console.WriteLine("\nEnter the amount for the payment advance:");
+                        decimal amount = decimal.Parse(System.Console.ReadLine());
+                        John.MakePayment(amount, Barcelona);
+                        System.Console.WriteLine("\nPayment advance created successfully!\n");
+                        break;
+                    case "4":
                         exit = true;
                         break;
                     default:
