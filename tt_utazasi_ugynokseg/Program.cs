@@ -17,7 +17,7 @@ namespace TTUtazasiUgynokseg
 
             John.SignUp(Barcelona);
 
-            System.Console.WriteLine(John);
+            //System.Console.WriteLine(John);
 
             John.MakePayment(20000, Barcelona);
 

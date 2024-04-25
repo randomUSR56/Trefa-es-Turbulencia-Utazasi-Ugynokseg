@@ -1,3 +1,5 @@
 --- Passengers ---
-John Doe is going to Barcelona
+Jon is going to Barcelona, Malibu
+Butch is going to 
 --- Trips ---
+Destination: Malibu, Price: 5000, Max Passengers: 2
