@@ -12,5 +12,10 @@ namespace TTUtazasiUgynokseg
             Price = price;
             MaxPassengers = maxPassengers;
         }
+
+        public override string ToString()
+        {
+            return $"Destination: {Destination}, Price: {Price}, Max Passengers: {MaxPassengers}";
+        }
     }
 }

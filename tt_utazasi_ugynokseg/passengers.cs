@@ -5,6 +5,7 @@ namespace TTUtazasiUgynokseg
     public class Passengers
     {
         public List<Trips> trips = new List<Trips>();
+        public List<Payment> Payments { get; set; }
         public string PassengerName { get; private set; }
         public string Address { get; private set; }
         public string PhoneNumber { get; private set; }
@@ -14,12 +15,18 @@ namespace TTUtazasiUgynokseg
             PassengerName = passengerName;
             Address = address;
             PhoneNumber = phoneNumber;
+            Payments = new List<Payment>();
         }
 
         public override string ToString()
         {
             string places = string.Join(", ", trips.Select(t => t.Destination));
             return $"{PassengerName} is going to {places}";
+        }
+
+        public void MakePayment(decimal amount)
+        {
+            Payments.Add(new Payment(amount));
         }
 
         public void SignUp(Trips trip)
