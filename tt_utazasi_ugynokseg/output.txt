@@ -1,4 +1,3 @@
 --- Passengers ---
-John Doe is going to Barcelona, Onga
+John Doe is going to Barcelona
 --- Trips ---
-Destination: Onga, Price: 3, Max Passengers: 1
