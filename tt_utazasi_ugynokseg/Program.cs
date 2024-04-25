@@ -132,10 +132,22 @@ namespace TTUtazasiUgynokseg
                         System.Console.WriteLine("\nPassenger signed up for the trip successfully!\n");
                         break;
                     case "10":
+                        using (StreamWriter writer = new StreamWriter("output.txt"))
+                        {
+                            writer.WriteLine("--- Passengers ---");
+                            foreach (Passengers passenger in passengers)
+                            {
+                                writer.WriteLine(passenger);
+                            }
+
+                            writer.WriteLine("--- Trips ---");
+                            foreach (Trips trip in listTrips)
+                            {
+                                writer.WriteLine(trip);
+                            }
+                        }
+                        System.Console.WriteLine("\nInformation written to output.txt successfully!\n");
                         exit = true;
-                        break;
-                    default:
-                        System.Console.WriteLine("\nInvalid option. Please try again.\n");
                         break;
                 }
             }
